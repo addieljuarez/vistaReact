@@ -3,5 +3,12 @@
 POST http://localhost:8888/crudPHP/index.php/API/Login
 Content-Type: application/x-www-form-urlencoded
 
-user=addieljuarez@gmail.com
-&pass=123456
+user=addieljuarez@gmail.com&pass=123456
+
+###
+GET http://localhost:8888/crudPHP/index.php/API/getAllUsers
+
+
+# http 80
+# https 443
+# ssh 22

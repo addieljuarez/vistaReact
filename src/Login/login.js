@@ -30,9 +30,13 @@ export default class Login extends React.Component{
      */
     ingresar(){
         // alert('click en el boton');
-        if(this.state.usuario != '' && this.state.pass !=''){
+        if(this.state.usuario !== '' && this.state.pass !=''){
             fetch('http://localhost:8888/crudPHP/index.php/API/Login', {
                 method: 'POST',
+                headers:{
+                    'Content-Type': 'application/x-www-form-urlencoded'
+                },
+                body:'user=addieljuarez@gmail.com&pass=123456'
             })
             .then(result => result.json())
             .then(function(data){
